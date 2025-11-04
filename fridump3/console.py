@@ -192,7 +192,7 @@ def run() -> None:
     try:
         # Performing the memory dump
         for range in ranges:
-            logger.debug(f"Base address: {str(range["base"])}")
+            logger.debug(f"Base address: {str(range['base'])}")
             logger.debug(f"Size: {str(range["size"])}")
             if range["size"] > MAX_SIZE:
                 logger.debug("Size is too big, splitting the dump into chunks")
