@@ -193,7 +193,7 @@ def run() -> None:
         # Performing the memory dump
         for range in ranges:
             logger.debug(f"Base address: {str(range['base'])}")
-            logger.debug(f"Size: {str(range["size"])}")
+            logger.debug(f"Size: {str(range['size'])}")
             if range["size"] > MAX_SIZE:
                 logger.debug("Size is too big, splitting the dump into chunks")
                 mem_access_viol = dumper.splitter(
